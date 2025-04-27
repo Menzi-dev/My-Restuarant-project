@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    android:layout_marginBottom="8dp"
+    android:layout_marginHorizontal="8dp"
+    android:elevation="2dp">
+
+    <TextView
+        android:id="@+id/reservationUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FF5722" />
+
+    <TextView
+        android:id="@+id/reservationUserId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User ID: Unknown"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:textColor="#1E3A8A" />
+
+    <TextView
+        android:id="@+id/reservationTableNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Table Number: Unknown"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:textColor="#1E3A8A" />
+
+    <TextView
+        android:id="@+id/reservationDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date, Time"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:textColor="#1E3A8A" />
+
+    <TextView
+        android:id="@+id/reservationStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:textColor="#FF5722" />
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/acceptButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF5722"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/declineButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decline"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF5722"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">urbanstylerestaurant</string>
+    <string name="welcome_text">
+        Welcome to Urban Style Restaurant! 🍽️<br /><br />
+        Where every meal is crafted with love,<br />
+        and every bite tells a story.<br />
+        Experience taste like never before! 🔥
+    </string>
+    <string name="category_prompt">Select category</string>
+    <string name="image_prompt">Select image</string>
+
+    <string-array name="menu_categories">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+        <item>Drinks</item>
+        <item>Desserts</item>
+    </string-array>
+
+    <string-array name="menu_images">
+        <item>breakfast1</item>
+        <item>breakfast2</item>
+        <item>drink1</item>
+        <item>dessert1</item>
+    </string-array>
+</resources>

@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <!-- Header Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:background="#FF5722"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="316dp"
+            android:layout_height="61dp"
+            android:layout_weight="1"
+            android:text="Table Reservation"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="51dp"
+            android:layout_height="111dp"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_menu_revert"
+            app:tint="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Date and Time Selectors -->
+    <Button
+        android:id="@+id/selectDateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:backgroundTint="#FFEB3B"
+        android:text="Select Date"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FF5722"
+        android:padding="10dp"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/selectTimeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectDateButton"
+        android:backgroundTint="#FFEB3B"
+        android:text="Select Time"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FF5722"
+        android:padding="10dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Guest Count Input -->
+    <EditText
+        android:id="@+id/guestCountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectTimeButton"
+        android:hint="Enter number of guests"
+        android:inputType="number"
+        android:background="@android:drawable/edit_text"
+        android:backgroundTint="#FFEB3B"
+        android:textColor="#000000"
+        android:textColorHint="#B0BEC5"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Loading Indicator -->
+    <ProgressBar
+        android:id="@+id/loadingProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guestCountEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone" />
+
+    <!-- Message if no tables -->
+    <TextView
+        android:id="@+id/noTablesText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loadingProgressBar"
+        android:text="No available tables right now"
+        android:textColor="#FF5722"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Table Cards Container -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/noTablesText"
+        android:layout_above="@id/bottomSpacer">
+
+        <LinearLayout
+            android:id="@+id/tableContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="20dp"
+            android:showDividers="middle" />
+    </ScrollView>
+
+    <!-- Spacer to prevent overlap with bottom navigation -->
+    <Space
+        android:id="@+id/bottomSpacer"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

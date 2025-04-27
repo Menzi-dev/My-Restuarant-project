@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <!-- Navigation Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:background="#FF5722"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="316dp"
+            android:layout_height="61dp"
+            android:layout_weight="1"
+            android:text="Urban Style Restaurant"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/cartImageButton"
+            android:layout_width="51dp"
+            android:layout_height="111dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/shopping_cart"
+            app:tint="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Navigation Text -->
+    <TextView
+        android:id="@+id/navBarText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:background="#FF5722"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="🍴 Lunch served from 12:00-15:00"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Loading Indicator -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <!-- RecyclerView for Items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lunchRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/checkoutButton"
+        android:layout_below="@id/navBarText"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <!-- No Items Message -->
+    <TextView
+        android:id="@+id/noItemsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkoutButton"
+        android:layout_below="@id/navBarText"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="No menu items available"
+        android:textColor="#FF5722"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <!-- Checkout Button -->
+    <Button
+        android:id="@+id/checkoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/backButton"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#FF5722"
+        android:text="Place Order"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF" />
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_menu_revert"
+        app:tint="#FF5722" />
+</RelativeLayout>

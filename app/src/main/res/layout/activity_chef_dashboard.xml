@@ -1,0 +1,58 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#FF5722">
+
+        <!-- Greeting Text -->
+        <TextView
+            android:id="@+id/greetingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hey Chef!"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+
+        <!-- Empty Message -->
+        <TextView
+            android:id="@+id/emptyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You have no current orders."
+            android:textSize="16sp"
+            android:textColor="#757575"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone" />
+
+        <!-- Orders Container -->
+        <LinearLayout
+            android:id="@+id/orderContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@android:drawable/ic_menu_revert"
+            android:contentDescription="Back"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="24dp"
+            app:tint="#FFFFFE" />
+    </LinearLayout>
+</ScrollView>

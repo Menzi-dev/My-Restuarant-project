@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "160300808747",
+    "project_id": "urban-style-restaurant",
+    "storage_bucket": "urban-style-restaurant.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160300808747:android:3c246699ad7dd271b3886e",
+        "android_client_info": {
+          "package_name": "com.example.urbanstylerestaurant"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqlMUYDbSQ3ooEYBLasIpyBMVYdGI4OF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

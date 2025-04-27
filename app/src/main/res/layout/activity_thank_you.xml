@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <!-- Header Bar -->
+    <LinearLayout
+        android:id="@+id/headerBar"
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:background="#FF5722"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thank You!"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Thank You Message -->
+    <TextView
+        android:id="@+id/thankYouMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerBar"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Thank you, [Name]! We’re excited to serve you. Your order and table reservation have been confirmed. Enjoy your dining experience! 🎉"
+        android:textColor="#FFC107"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/trackButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thankYouMessage"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FFEB3B"
+        android:text="Track Order or Reservation"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FF5722"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/feedbackButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trackButton"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FFEB3B"
+        android:text="Give Feedback"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FF5722"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feedbackButton"
+        android:backgroundTint="#FF5722"
+        android:text="Logout or Exit"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:padding="10dp" />
+</RelativeLayout>

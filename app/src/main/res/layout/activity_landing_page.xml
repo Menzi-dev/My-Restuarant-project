@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- Background slideshow -->
+    <ImageView
+        android:id="@+id/landingImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <!-- Dark overlay for better contrast -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <!-- Centered content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <!-- Restaurant Logo -->
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/orange"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop" />
+
+        <!-- Restaurant Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Urban Style Restaurant"
+            android:textSize="24sp"
+            android:textColor="#FFEB3B"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Get Started Button -->
+        <Button
+            android:id="@+id/getStartedButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Get Started"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:backgroundTint="#FF5722"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Social media icons -->
+
+
+</RelativeLayout>
