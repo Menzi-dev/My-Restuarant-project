@@ -46,7 +46,7 @@ The system was designed around four core stakeholders (Customer, Waiter, Chef, M
 
 **Core entities:** `Users`, `Customer`, `Waiter`, `Chef`, `Manager`, `Menu`, `Orders`, `Reservation`, `Feedback`, `Sales and Stock`
 
-Full requirements analysis, normalization steps, ER diagrams, and test cases are documented in [`Restaurant_App_Full_Documentation.pdf`](./Restaurant_App_Full_Documentation.pdf).
+Full requirements analysis, normalization steps, ER diagrams, and test cases are documented in [`Restaurant_App_Full_Documentation.pdf`](Restaurant_App_Full_Documentation.pdf).
 
 ---
 
