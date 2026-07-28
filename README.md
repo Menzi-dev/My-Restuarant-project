@@ -24,6 +24,8 @@ Built as a capstone project for the **Mobile App Development/Programming II** mo
 **Architecture:** Role-based access control (Customer / Waiter / Chef / Manager) on top of a relational schema normalized up to **4NF**, designed to eliminate redundancy and keep order, reservation, and inventory data consistent across both platforms in real time.
 
 ---
+The Pictures are also available for viewing on this repo as Project pictures.docx
+
 
 ## Key Features
 
