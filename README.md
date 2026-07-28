@@ -48,7 +48,10 @@ The app opens with a branded splash screen, then routes users into a role-aware 
 
 | Splash Screen | Login | Register |
 |---|---|---|
-| ![Splash Screen](screenshots/01-splash-screen.png) | ![Login](screenshots/02-login.png) | ![Register](screenshots/03-register.png) |
+| ![Splash Screen](<img width="414" height="858" alt="Screenshot 2026-07-24 134853" src="https://github.com/user-attachments/assets/8fe1be5f-7c16-4069-bb6a-68b99fee8614" />
+) | ![Login](<img width="411" height="856" alt="Screenshot 2026-07-24 134922" src="https://github.com/user-attachments/assets/3aad7204-1957-4951-a377-e2f163e23c80" />
+) | ![Register](<img width="409" height="863" alt="Screenshot 2026-07-24 135012" src="https://github.com/user-attachments/assets/7fce1308-7fc7-4c03-80de-6cf5e42fc835" />
+) |
 
 ---
 
